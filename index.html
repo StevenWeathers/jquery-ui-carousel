@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Carousel</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0,initial-scale=1.0">
+  <style>
+    body { font-size: 16px; }
+  </style>
+  <link rel="stylesheet" href="lib/css/ionicons.css" />
+  <link rel="stylesheet" href="src/ui.carousel.css" />
+</head>
+<body>
+  <div id="carousel-demo">
+    <ul>
+      <li><img src="http://placehold.it/800x400&text=First%20Slide"></li>
+      <li><img src="http://placehold.it/800x400/0000ff&text=Second%20Slide"></li>
+      <li><img src="http://placehold.it/800x400/00ff00&text=Third%20Slide"></li>
+      <li><img src="http://placehold.it/800x400/ff0000&text=Fourth%20Slide"></li>
+    </ul>
+  </div>
+
+  <!-- Required -->
+  <script src="lib/jquery.js"></script>
+  <script src="lib/jquery-ui.js"></script>
+  <script src="src/ui.carousel.js" data-cover></script>
+
+  <script>
+    (function($){
+      $('#carousel-demo').carousel();
+    }(jQuery));
+  </script>
+  
+</body>
+</html>
