@@ -230,8 +230,8 @@
 		var $carouselDefaultArrowsTest = $carouselElem.clone().attr('id', 'testDefaultArrows').appendTo('#qunit-fixture');
 		$carouselDefaultArrowsTest.carousel();
 
-		equal($carouselDefaultArrowsTest.find('.ui-carousel-prev i').hasClass('icon-nav-left-arrow'), true, "Prev Arrow Icon Class is icon-arrow-left");
-		equal($carouselDefaultArrowsTest.find('.ui-carousel-next i').hasClass('icon-nav-right-arrow'), true, "Next Arrow Icon Class is icon-arrow-right");
+		equal($carouselDefaultArrowsTest.find('.ui-carousel-prev i').hasClass('ion-chevron-left'), true, "Prev Arrow Icon Class is ion-chevron-left");
+		equal($carouselDefaultArrowsTest.find('.ui-carousel-next i').hasClass('ion-chevron-right'), true, "Next Arrow Icon Class is ion-chevron-right");
 	});
 
 	test( "Optional Arrow Classes", function(){
